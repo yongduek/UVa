@@ -8,6 +8,21 @@
 
 using namespace std;
 
+typedef  vector<int>  vi;
+typedef vector< vector<int> > vvi;
+
+void print(vi s, string st="") {
+    printf("%s", st.c_str());
+    for (int i=0; i<s.size(); i++)
+        printf ("%d ", s[i]);
+    printf("\n");
+}
+
+void print (vvi s) {
+    for (int i=0; i<s.size(); i++)
+        print (s[i], to_string(i)+" : ");
+    printf("\n----\n");
+}
 
 vector< vector<int> > solutions;
 
@@ -54,6 +69,8 @@ int main() // with backtracking (or DFS with pruning)
         sol[0] = r; // Q is at 0-th column, i-th row
         backtrack (1/* next column number*/, sol/* sol. up to i-th column*/);
     }
+
+    print (solutions);
     
     // ---------------------------------------- //
     

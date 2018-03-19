@@ -1,5 +1,7 @@
 // yndk@sogang.ac.kr
-
+//
+// 20970762	11565	Simple Equations	Accepted	C++11	0.000	2018-03-19 12:54:54
+//
 #include <iostream>
 #include <set>
 using namespace std;
